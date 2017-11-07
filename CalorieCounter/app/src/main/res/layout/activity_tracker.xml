@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="soulstudios.caloriecounter.TrackerActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="@string/burned"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/black"/>
+
+    <LinearLayout
+        android:id="@+id/counter"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/outer_border">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="@dimen/fab_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:text="@string/cal_burned" />
+
+        <TextView
+            android:id="@+id/cal_display"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0"/>
+
+        <Button
+            android:id="@+id/start_stop"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_green_light"
+            android:text="@string/start"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_marginStart="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="5dp"
+            android:text="@string/speed"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/speed_display"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:padding="5dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="18sp"
+            android:background="@drawable/outer_border"/>
+
+        <TextView
+            android:id="@+id/time_display"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="30dp"
+            android:padding="5dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="18sp"
+            android:background="@drawable/outer_border"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="5dp"
+            android:visibility="invisible"
+            android:text="@string/speed"
+            android:textSize="18sp"/>
+
+        <ImageButton
+            android:id="@+id/but_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/up"
+            app:srcCompat="@android:drawable/arrow_up_float" />
+
+        <ImageButton
+            android:id="@+id/but_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/down"
+            app:srcCompat="@android:drawable/arrow_down_float" />
+
+    </LinearLayout>
+
+    <worker8.com.github.radiogroupplus.RadioGroupPlus
+        android:id="@+id/food_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:checkedButton="@+id/radio_beer">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="30dp"
+            android:columnCount="3">
+            <RadioButton
+                android:id="@+id/radio_wine"
+                android:tag="wine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:text="@string/wine" />
+
+            <RadioButton
+                android:id="@+id/radio_martini"
+                android:tag="martini"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/martini" />
+
+            <RadioButton
+                android:id="@+id/radio_beer"
+                android:tag="beer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/beer" />
+
+            <RadioButton
+                android:id="@+id/radio_soda"
+                android:tag="soda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/soda" />
+
+            <RadioButton
+                android:id="@+id/radio_burger"
+                android:tag="burger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:text="@string/burger" />
+
+            <RadioButton
+                android:id="@+id/radio_hotdog"
+                android:tag="hotdog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hotdog" />
+
+            <RadioButton
+                android:id="@+id/radio_sandwich"
+                android:tag="sandwich"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sandwich" />
+
+            <RadioButton
+                android:id="@+id/radio_fries"
+                android:tag="fries"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fries" />
+
+            <RadioButton
+                android:id="@+id/radio_steak"
+                android:tag="steak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:text="@string/steak" />
+
+            <RadioButton
+                android:id="@+id/radio_pizza"
+                android:tag="pizza"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pizza" />
+
+            <RadioButton
+                android:id="@+id/radio_taco"
+                android:tag="taco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/taco" />
+
+            <RadioButton
+                android:id="@+id/radio_icecream"
+                android:tag="icecream"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/icecream" />
+
+            <RadioButton
+                android:id="@+id/radio_donut"
+                android:tag="donut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/donut" />
+
+            <RadioButton
+                android:id="@+id/radio_bacon"
+                android:tag="bacon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bacon" />
+
+        </GridLayout>
+    </worker8.com.github.radiogroupplus.RadioGroupPlus>
+
+</LinearLayout>
