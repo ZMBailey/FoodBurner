@@ -1,0 +1,1 @@
+fitbitapi, fitbitauth, and fitbitcommon modules written by Jason Boggess

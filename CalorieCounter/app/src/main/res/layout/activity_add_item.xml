@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="soulstudios.caloriecounter.AddItemActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:orientation="horizontal">
+        <TextView
+            android:labelFor="@+id/name_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"/>
+
+        <EditText
+            android:id="@+id/name_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:labelFor="@+id/cal_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cal"/>
+
+        <EditText
+            android:id="@+id/cal_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="3"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:text="@string/pic"/>
+
+    <worker8.com.github.radiogroupplus.RadioGroupPlus
+        android:id="@+id/icons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/outer_border"
+
+            android:columnCount="5"
+            android:layout_marginStart="40dp">
+
+            <!--row 0~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+            <View
+                android:layout_height="40dp"
+                android:layout_width="65dp"
+                android:background="@drawable/outer_border"
+                android:layout_column="0"
+                android:layout_row="0"
+                />
+
+            <RadioButton
+                android:layout_column="0"
+                android:layout_row="0"
+                android:layout_marginTop="5dp"
+                android:tag="wine"/>
+
+            <ImageView
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:src="@drawable/wine"/>
+
+            <View
+                android:layout_height="40dp"
+                android:layout_width="65dp"
+                android:background="@drawable/outer_border"
+                android:layout_column="1"
+                android:layout_row="0"
+                />
+
+            <RadioButton
+                android:layout_column="1"
+                android:layout_row="0"
+                android:layout_marginTop="5dp"
+                android:tag="martini"/>
+
+            <ImageView
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_column="1"
+                android:layout_row="0"
+                android:src="@drawable/martini"/>
+
+            <View
+                android:layout_height="40dp"
+                android:layout_width="65dp"
+                android:background="@drawable/outer_border"
+                android:layout_column="2"
+                android:layout_row="0"
+                />
+
+            <RadioButton
+                android:layout_column="2"
+                android:layout_row="0"
+                android:layout_marginTop="5dp"
+                android:tag="beer"/>
+
+            <ImageView
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_column="2"
+                android:layout_row="0"
+                android:src="@drawable/beer"/>
+
+            <View
+                android:layout_height="40dp"
+                android:layout_width="65dp"
+                android:background="@drawable/outer_border"
+                android:layout_column="3"
+                android:layout_row="0"
+                />
+
+            <RadioButton
+                android:layout_column="3"
+                android:layout_row="0"
+                android:layout_marginTop="5dp"
+                android:tag="soda"/>
+
+            <ImageView
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_column="3"
+                android:layout_row="0"
+                android:src="@drawable/soda"/>
+
+            <View
+                android:layout_height="40dp"
+                android:layout_width="65dp"
+                android:background="@drawable/outer_border"
+                android:layout_column="4"
+                android:layout_row="0"
+                />
+
+            <RadioButton
+                android:layout_column="4"
+                android:layout_row="0"
+                android:layout_marginTop="5dp"
+                android:tag="burger"/>
+
+            <ImageView
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_column="4"
+                android:layout_row="0"
+                android:src="@drawable/burger2"/>
+
+            <!--row 1~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+            <View
+                android:layout_height="40dp"
+                android:layout_width="65dp"
+                android:background="@drawable/outer_border"
+                android:layout_column="0"
+                android:layout_row="1"
+                />
+
+            <RadioButton
+                android:layout_column="0"
+                android:layout_row="1"
+                android:layout_marginTop="5dp"
+                android:tag="hotdog"/>
+
+            <ImageView
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:src="@drawable/hotdog"/>
+
+            <View
+                android:layout_height="40dp"
+                android:layout_width="65dp"
+                android:background="@drawable/outer_border"
+                android:layout_column="1"
+                android:layout_row="1"
+                />
+
+            <RadioButton
+                android:layout_column="1"
+                android:layout_row="1"
+                android:layout_marginTop="5dp"
+                android:tag="fries"/>
+
+            <ImageView
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_column="1"
+                android:layout_row="1"
+                android:src="@drawable/fries"/>
+
+            <View
+                android:layout_height="40dp"
+                android:layout_width="65dp"
+                android:background="@drawable/outer_border"
+                android:layout_column="2"
+                android:layout_row="1"
+                />
+
+            <RadioButton
+                android:layout_column="2"
+                android:layout_row="1"
+                android:layout_marginTop="5dp"
+                android:tag="steak"/>
+
+            <ImageView
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_column="2"
+                android:layout_row="1"
+                android:src="@drawable/steak"/>
+
+            <View
+                android:layout_height="40dp"
+                android:layout_width="65dp"
+                android:background="@drawable/outer_border"
+                android:layout_column="3"
+                android:layout_row="1"
+                />
+
+            <RadioButton
+                android:layout_column="3"
+                android:layout_row="1"
+                android:layout_marginTop="5dp"
+                android:tag="sandwich"/>
+
+            <ImageView
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_column="3"
+                android:layout_row="1"
+                android:src="@drawable/sandwich"/>
+
+            <View
+                android:layout_height="40dp"
+                android:layout_width="65dp"
+                android:background="@drawable/outer_border"
+                android:layout_column="4"
+                android:layout_row="1"
+                />
+
+            <RadioButton
+                android:layout_column="4"
+                android:layout_row="1"
+                android:layout_marginTop="5dp"
+                android:tag="pizza"/>
+
+            <ImageView
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_column="4"
+                android:layout_row="1"
+                android:src="@drawable/pizza2"/>
+
+            <!--row 2~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+            <View
+                android:layout_height="40dp"
+                android:layout_width="65dp"
+                android:background="@drawable/outer_border"
+                android:layout_column="0"
+                android:layout_row="2"
+                />
+
+            <RadioButton
+                android:layout_column="0"
+                android:layout_row="2"
+                android:layout_marginTop="5dp"
+                android:tag="taco"/>
+
+            <ImageView
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_column="0"
+                android:layout_row="2"
+                android:src="@drawable/taco"/>
+
+            <View
+                android:layout_height="40dp"
+                android:layout_width="65dp"
+                android:background="@drawable/outer_border"
+                android:layout_column="1"
+                android:layout_row="2"
+                />
+
+            <RadioButton
+                android:layout_column="1"
+                android:layout_row="2"
+                android:layout_marginTop="5dp"
+                android:tag="icecream"/>
+
+            <ImageView
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_column="1"
+                android:layout_row="2"
+                android:src="@drawable/icecream3"/>
+
+            <View
+                android:layout_height="40dp"
+                android:layout_width="65dp"
+                android:background="@drawable/outer_border"
+                android:layout_column="2"
+                android:layout_row="2"
+                />
+
+            <RadioButton
+                android:layout_column="2"
+                android:layout_row="2"
+                android:layout_marginTop="5dp"
+                android:tag="bacon"/>
+
+            <ImageView
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_column="2"
+                android:layout_row="2"
+                android:src="@drawable/bacon"/>
+
+            <View
+                android:layout_height="40dp"
+                android:layout_width="65dp"
+                android:background="@drawable/outer_border"
+                android:layout_column="3"
+                android:layout_row="2"
+                />
+
+            <RadioButton
+                android:layout_column="3"
+                android:layout_row="2"
+                android:layout_marginTop="5dp"
+                android:tag="donut"/>
+
+            <ImageView
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_column="3"
+                android:layout_row="2"
+                android:src="@drawable/donut"/>
+
+            <View
+                android:layout_height="40dp"
+                android:layout_width="65dp"
+                android:background="@drawable/outer_border"
+                android:layout_column="4"
+                android:layout_row="2"
+                />
+
+        </GridLayout>
+    </worker8.com.github.radiogroupplus.RadioGroupPlus>
+
+    <Button
+        android:id="@+id/add_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:text="@string/but_add"/>
+</LinearLayout>

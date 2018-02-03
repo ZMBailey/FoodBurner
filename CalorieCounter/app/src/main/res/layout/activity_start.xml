@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/fab_margin"
+    tools:context="soulstudios.caloriecounter.StartActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center_vertical"
+        android:layout_weight="1"
+        android:layout_marginStart="75dp"
+        android:layout_marginEnd="75dp"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/treadmill_log"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/alert_light_frame"
+            android:backgroundTint="@android:color/holo_green_light"
+            android:layout_marginBottom="30dp"
+            android:onClick="onTreadmill"
+            android:text="@string/runner" />
+
+        <Button
+            android:id="@+id/fitbit_log"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/alert_light_frame"
+            android:backgroundTint="@android:color/holo_blue_light"
+            android:onClick="onLoginClick"
+            android:text="@string/login" />
+
+        <Button
+            android:id="@+id/fitbit_log_out"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/alert_light_frame"
+            android:backgroundTint="@android:color/holo_blue_light"
+            android:onClick="onLogoutClick"
+            android:text="@string/logout" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:text="@string/disclaim"/>
+</LinearLayout>

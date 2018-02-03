@@ -54,12 +54,43 @@
             android:layout_weight="1"
             android:text="0"/>
 
-        <Button
-            android:id="@+id/start_stop"
-            android:layout_width="70dp"
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="@dimen/fab_margin">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@android:color/holo_green_light"
-            android:text="@string/start"/>
+            android:layout_weight="1"
+            android:background="@android:color/background_light"
+            android:onClick="onClickBack"
+            android:text="@string/goback"
+            app:srcCompat="@drawable/but_back" />
+
+        <ImageButton
+            android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/background_light"
+            android:text="@string/start"
+            app:srcCompat="@drawable/but_start" />
+
+        <ImageButton
+            android:id="@+id/stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/background_light"
+            android:text="@string/start"
+            app:srcCompat="@drawable/but_stop" />
     </LinearLayout>
 
     <LinearLayout
@@ -127,121 +158,19 @@
 
     </LinearLayout>
 
-    <worker8.com.github.radiogroupplus.RadioGroupPlus
-        android:id="@+id/food_item"
+    <fragment
+        android:id="@+id/food_frag"
+        android:tag="food_frag"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:checkedButton="@+id/radio_beer">
+        android:layout_height="0dp"
+        android:name="soulstudios.caloriecounter.FoodFragment"
+        android:layout_weight="1"/>
 
-        <GridLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/fab_margin"
-            android:layout_marginStart="50dp"
-            android:layout_marginEnd="30dp"
-            android:columnCount="3">
-            <RadioButton
-                android:id="@+id/radio_wine"
-                android:tag="wine"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="20dp"
-                android:text="@string/wine" />
-
-            <RadioButton
-                android:id="@+id/radio_martini"
-                android:tag="martini"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/martini" />
-
-            <RadioButton
-                android:id="@+id/radio_beer"
-                android:tag="beer"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/beer" />
-
-            <RadioButton
-                android:id="@+id/radio_soda"
-                android:tag="soda"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/soda" />
-
-            <RadioButton
-                android:id="@+id/radio_burger"
-                android:tag="burger"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="20dp"
-                android:text="@string/burger" />
-
-            <RadioButton
-                android:id="@+id/radio_hotdog"
-                android:tag="hotdog"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/hotdog" />
-
-            <RadioButton
-                android:id="@+id/radio_sandwich"
-                android:tag="sandwich"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/sandwich" />
-
-            <RadioButton
-                android:id="@+id/radio_fries"
-                android:tag="fries"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/fries" />
-
-            <RadioButton
-                android:id="@+id/radio_steak"
-                android:tag="steak"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="20dp"
-                android:text="@string/steak" />
-
-            <RadioButton
-                android:id="@+id/radio_pizza"
-                android:tag="pizza"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/pizza" />
-
-            <RadioButton
-                android:id="@+id/radio_taco"
-                android:tag="taco"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/taco" />
-
-            <RadioButton
-                android:id="@+id/radio_icecream"
-                android:tag="icecream"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/icecream" />
-
-            <RadioButton
-                android:id="@+id/radio_donut"
-                android:tag="donut"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/donut" />
-
-            <RadioButton
-                android:id="@+id/radio_bacon"
-                android:tag="bacon"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/bacon" />
-
-        </GridLayout>
-    </worker8.com.github.radiogroupplus.RadioGroupPlus>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:onClick="onClickAdd"
+        android:text="@string/but_add" />
 
 </LinearLayout>

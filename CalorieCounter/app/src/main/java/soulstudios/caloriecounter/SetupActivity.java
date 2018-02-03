@@ -24,6 +24,10 @@ public class SetupActivity extends AppCompatActivity {
         go.setOnClickListener(new NextHandler());
     }
 
+    public void onClickBack(View v){
+        this.finish();
+    }
+
     private class NextHandler implements View.OnClickListener{
         @Override
         public void onClick(View v) {

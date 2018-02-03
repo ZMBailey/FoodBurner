@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="soulstudios.caloriecounter.FBMenuActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginEnd="75dp"
+        android:gravity="center_vertical"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/fbworkout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/alert_light_frame"
+            android:backgroundTint="@android:color/holo_blue_light"
+            android:layout_marginBottom="30dp"
+            android:onClick="onWorkout"
+            android:text="@string/but_fb_workout" />
+
+        <Button
+            android:id="@+id/fbtracker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/alert_light_frame"
+            android:backgroundTint="@android:color/holo_green_light"
+            android:layout_marginBottom="30dp"
+            android:onClick="onFBTracker"
+            android:text="@string/but_fb_tracker" />
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/background_light"
+            android:onClick="onClickBack"
+            android:text="@string/goback"
+            app:srcCompat="@drawable/but_back" />
+
+    </LinearLayout>
+
+</LinearLayout>

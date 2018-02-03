@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="soulstudios.caloriecounter.AddItemActivity">
+
+
+    <worker8.com.github.radiogroupplus.RadioGroupPlus
+        android:id="@+id/workouttype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/radio_amount"
+                    android:tag="amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:labelFor="@+id/amount_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/amount"/>
+
+                <EditText
+                    android:id="@+id/amount_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="3"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/radio_calories"
+                    android:tag="cals"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:labelFor="@+id/cal_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cal"/>
+
+                <EditText
+                    android:id="@+id/cal_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="3"/>
+            </LinearLayout>
+        </LinearLayout>
+    </worker8.com.github.radiogroupplus.RadioGroupPlus>
+
+    <fragment
+        android:id="@+id/food_frag"
+        android:tag="food_frag"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:name="soulstudios.caloriecounter.FoodFragment"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/add_workout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:text="@string/newworkout"/>
+</LinearLayout>

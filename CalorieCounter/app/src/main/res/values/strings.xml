@@ -1,6 +1,7 @@
 <resources>
-    <string name="app_name">Calorie Cancel</string>
+    <string name="app_name">Food Burner</string>
     <string name="action_settings">Settings</string>
+    <string name="filter_food">FitBitFilter</string>
     <string name="intro">First, we\'ll need a few pieces of information
         so we can correctly calculate how calories you\'re burning.</string>
     <string name="weight">Weight:</string>
@@ -11,27 +12,68 @@
     <string name="but_next">Get Started</string>
     <string name="start">Start</string>
     <string name="stop">Stop</string>
+    <string name="newworkout">New Workout</string>
+    <string name="reload">Get Data</string>
+    <string name="error_loading_data">Error Loading Data</string>
+    <string name="login_dismissed">Login Dismissed</string>
+    <string name="missing_scopes_error">Missing Scopes</string>
+    <string name="login_title">User Login</string>
+    <string name="logout">Log out of Fitbit</string>
+    <string name="login">Login to Fitbit</string>
+    <string name="runner">Run Tracker</string>
+    <string name="goback">Back</string>
+    <string name="but_add">Add Item</string>
 
+    <string name="name">Name:</string>
+    <string name="cal">Calories:</string>
+    <string name="pic">Icon:</string>
+    <string name="amount">Number of items to burn:</string>
+
+    <string name="food_title">Food Item</string>
+    <string name="cal_title">Calories</string>
+    <string name="icon_title">Icon</string>
+
+    <string name="but_fb_workout">FitBit Workout</string>
+    <string name="but_fb_tracker">Food Burned</string>
     <string name="burned">Food Canceled:</string>
     <string name="speed">Speed:</string>
     <string name="cal_burned">Cal. Burned:</string>
     <!--Food Items~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-    <string name="wine">Wine:</string>
-    <string name="beer">Beer:</string>
-    <string name="martini">Martini:</string>
-    <string name="soda">Soda:</string>
-    <string name="burger">Burger:</string>
-    <string name="hotdog">Hotdog:</string>
-    <string name="sandwich">Sandwich:</string>
-    <string name="fries">Fries:</string>
-    <string name="steak">Steak:</string>
-    <string name="pizza">Pizza Slice:</string>
-    <string name="taco">Taco:</string>
-    <string name="icecream">Ice Cream:</string>
-    <string name="donut">Donut:</string>
-    <string name="bacon">Bacon Slice:</string>
+    <string name="wine">Wine</string>
+    <string name="beer">Beer</string>
+    <string name="martini">Martini</string>
+    <string name="soda">Soda</string>
+    <string name="burger">Burger</string>
+    <string name="hotdog">Hot Dog</string>
+    <string name="sandwich">Sandwich</string>
+    <string name="fries">Fries</string>
+    <string name="steak">Steak</string>
+    <string name="pizza">Pizza Slice</string>
+    <string name="taco">Taco</string>
+    <string name="icecream">Ice Cream</string>
+    <string name="donut">Donut</string>
+    <string name="bacon">Bacon Slice</string>
 
+    <string name="wine_cal">123</string>
+    <string name="beer_cal">150</string>
+    <string name="martini_cal">127</string>
+    <string name="soda_cal">138</string>
+    <string name="burger_cal">354</string>
+    <string name="hotdog_cal">151</string>
+    <string name="sandwich_cal">560</string>
+    <string name="fries_cal">365</string>
+    <string name="steak_cal">679</string>
+    <string name="pizza_cal">285</string>
+    <string name="taco_cal">156</string>
+    <string name="icecream_cal">137</string>
+    <string name="donut_cal">128</string>
+    <string name="bacon_cal">43</string>
 
+    <string name="nodata">No Data</string>
     <string name="up">Speed Up</string>
     <string name="down">Speed Down</string>
+
+    <string name="disclaim">Calorie amounts per food item are based
+        on averages. For specific items/calorie amounts, create custom items.</string>
+
 </resources>
